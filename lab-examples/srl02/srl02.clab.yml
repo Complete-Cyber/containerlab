@@ -11,6 +11,15 @@ topology:
       kind: nokia_srlinux
       image: ghcr.io/nokia/srlinux
       startup-config: srl2.cfg
+    srl3:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux
+      startup-config: srl3.cfg
+    srl4:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux
+      startup-config: srl4.cfg
 
   links:
     - endpoints: ["srl1:e1-1", "srl2:e1-1"]
+    - endpoints: ["srl3:e1-1", "srl4:e1-1"]
